@@ -1,1 +1,4 @@
 discord.py
+pip-tools
+pytest
+python-dotenv
