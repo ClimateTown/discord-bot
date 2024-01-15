@@ -15,7 +15,7 @@ This is the code that runs our custom `<bot name>` bot in the Climate Town Disco
 
 ## Contributing
 
-Contributions welcome! Suggest features for the bot by [posting an issue](https://github.com/ClimateTown/discord-bot/issues), or by messaging in `🔨server-suggestion-box`.
+Contributions welcome! Suggest features for the bot by [posting an issue](https://github.com/ClimateTown/discord-bot/issues/new/choose), or by messaging in `🔨server-suggestion-box`.
 
 Note that bot feature suggestions are approved/dis-approved at the discretion of the moderators (aka. Comptrollers) of the server\*.
 
