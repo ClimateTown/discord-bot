@@ -1,4 +1,5 @@
 discord.py
 pip-tools
+pre-commit
 pytest
 python-dotenv
