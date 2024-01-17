@@ -1,6 +1,6 @@
 <p align="center">
 <a href="https://hub.climatetownproductions.com">
-<img width="200" src="https://placehold.co/400">
+<img width="200" src="./spud.png">
 </a>
 </p>
 
@@ -11,7 +11,7 @@
 
 ---
 
-This is the code that runs our custom `<bot name>` bot in the Climate Town Discord server!
+This is the code that runs our friendly custom bot (their name is Spud) in the Climate Town Discord server!
 
 ## Contributing
 
