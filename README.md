@@ -11,8 +11,6 @@
 
 ---
 
-### Update: Maintainer has gone on break. Will be back July 2024 🤠
-
 This is the code that runs our custom `<bot name>` bot in the Climate Town Discord server!
 
 ## Contributing
