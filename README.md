@@ -1,5 +1,3 @@
-### it's been months and we still haven't come up with a usecase for this Discord bot. Archiving until this has a purpose... (if you have an idea, post an issue here or tag  `@Comptrollers` in Discord)
-
 <p align="center">
 <a href="https://hub.climatetownproductions.com">
 <img width="200" src="https://placehold.co/400">
