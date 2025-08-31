@@ -25,9 +25,7 @@ If you want to contribute code, thank you! Head over to the issues section and f
 
 ## Development setup
 
-
 This repo uses Python and [uv](https://github.com/astral-sh/uv) for dependency management.
-
 
 - [Install uv](https://github.com/astral-sh/uv#installation) if you haven't already
 - To set up the project, run:
