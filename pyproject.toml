@@ -1,0 +1,14 @@
+[project]
+name = "climate-town-discord-bot"
+version = "0.1.0"
+description = "Climate Town Discord bot"
+authors = [
+  { name = "Climate Town contributors" }
+]
+requires-python = "==3.12.*"
+dependencies = [
+  "discord.py",
+  "python-dotenv",
+  "pytest",
+  "pre-commit"
+]

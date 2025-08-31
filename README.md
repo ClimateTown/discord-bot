@@ -1,6 +1,6 @@
 <p align="center">
 <a href="https://hub.climatetownproductions.com">
-<img width="200" src="https://placehold.co/400">
+<img width="200" src="./spud.png">
 </a>
 </p>
 
@@ -11,11 +11,11 @@
 
 ---
 
-This is the code that runs our custom `<bot name>` bot in the Climate Town Discord server!
+This is the code that runs our friendly custom bot (their name is Spud) in the Climate Town Discord server!
 
 ## Contributing
 
-Contributions welcome! Suggest features for the bot by [posting an issue](https://github.com/ClimateTown/discord-bot/issues), or by messaging in `🔨server-suggestion-box`.
+Contributions welcome! Suggest features for the bot by [posting an issue](https://github.com/ClimateTown/discord-bot/issues/new/choose), or by messaging in `🔨server-suggestion-box`.
 
 Note that bot feature suggestions are approved/dis-approved at the discretion of the moderators (aka. Comptrollers) of the server\*.
 
@@ -25,24 +25,26 @@ If you want to contribute code, thank you! Head over to the issues section and f
 
 ## Development setup
 
-This repo uses Python.
+This repo uses Python and [uv](https://github.com/astral-sh/uv) for dependency management.
 
-- [install Python](https://www.python.org/downloads/) if you haven't already (minimum version 3.9)
-- create a virtual environment, then activate it (optional, but recommended)
-  - `python -m venv venv`
-  - activate the environment using either:
-    - `source venv/bin/activate` (Linux/MacOS)
-    - `venv\Scripts\activate.bat` (Windows)
-- `pip install -r requirements.txt`
-- OPTIONAL: `pre-commit install`
+- [Install uv](https://github.com/astral-sh/uv#installation) if you haven't already
+- To set up the project, run:
+  - `uv venv` (creates a virtual environment)
+  - `uv run ...` to run a command in the uv environment
 
-This codebase uses [pre-commit](https://pre-commit.com/) and [pre-commit CI](https://pre-commit.ci/) to run linting on code, format Python code, and generally have help with code quality. `pre-commit install` is an optional step in case you also want to have pre-commit run locally.
+This codebase uses [pre-commit](https://pre-commit.com/) and [pre-commit CI](https://pre-commit.ci/) to run linting on code, format Python code, and generally help with code quality. If you (optionally) want to run pre-commit locally, install it (e.g., via brew) then you can use the following commands:
 
-To run pre-commit manually (without making a commit), use `pre-commit run --all-files`. If you want to stop using pre-commit locally, just do `pre-commit uninstall`.
+- `pre-commit install` to install the hooks
+- `pre-commit uninstall` to uninstall the hooks
+- `pre-commit run --all-files` to run pre-commit manually (without making a commit)
 
 ### Adding Python dependencies
 
-This codebase uses [`pip-tools`](https://pypi.org/project/pip-tools/) to manage dependencies. If you add a new dependency, you can add it to `requirements.in` and run `pip-compile` to update `requirements.txt`. To update your environment run `pip-sync`.
+```
+uv add pacakge_name
+```
+
+This will update your environment and the necessary config files with the new dependency.
 
 ## Infrastructure
 
