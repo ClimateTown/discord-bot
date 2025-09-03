@@ -10,6 +10,7 @@ reset = "\033[0m"
 ## Funcitons
 # Here I shall put the functions the bot will call.
 
+
 # This function identifies what type of link it's dealing with so other functions act accordingly
 # It should also identify if embedding is necessary
 def identifier(link):
@@ -23,7 +24,9 @@ def identifier(link):
     # Instagram is handled differently than YT and it only needs embedding if it's the default link
     elif "instagram" in link:
         id_link = "ig"
-        if "dd" in link or "ez" in link or "kk" in link: # dd, ez and kk are the most used embedders, idk if there's others, might change this
+        if (
+            "dd" in link or "ez" in link or "kk" in link
+        ):  # dd, ez and kk are the most used embedders, idk if there's others, might change this
             needs_embed = False
         else:
             needs_embed = True
@@ -31,8 +34,11 @@ def identifier(link):
         print(f"{green}Needs embed: {needs_embed}{reset}")
         return id_link, needs_embed
     else:
-        print(f"{red}This link is currently unsupported or not recognized. Quitting.{reset}")
+        print(
+            f"{red}This link is currently unsupported or not recognized. Quitting.{reset}"
+        )
         quit()
+
 
 # This removes tracking strings
 def sanitizer(link, id_link):
@@ -53,6 +59,7 @@ def sanitizer(link, id_link):
         sanitized_link = sanitized_link.split("?igsh=")[0]
     return sanitized_link
 
+
 # This will make links embed
 def embedder(link, id_link):
     print(f"{yellow}Embeddizing {link}...{reset}")
@@ -60,6 +67,7 @@ def embedder(link, id_link):
     if id_link == "ig":
         embedder_link = link.replace("instagram", "instagramez")
     return embedder_link
+
 
 ## Code execution
 # This is where the code is actually ran
