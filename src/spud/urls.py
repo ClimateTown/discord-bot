@@ -22,7 +22,7 @@ class InstagramUrlProcessor(UrlProcessor):
     ...
 
 
-URL_PROCESSORS = [
+URL_PROCESSORS: list[UrlProcessor] = [
     # YouTubeUrlProcessor(),
     # InstagramUrlProcessor(),
 ]
