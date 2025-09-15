@@ -10,5 +10,6 @@ dependencies = [
   "discord.py",
   "python-dotenv",
   "pytest",
-  "pre-commit"
+  "pre-commit",
+  "mypy>=1.18.1",
 ]
