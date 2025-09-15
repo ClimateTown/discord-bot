@@ -2,6 +2,8 @@
 name = "climate-town-discord-bot"
 version = "0.1.0"
 description = "Climate Town Discord bot"
+
+readme = "README.md"
 authors = [
   { name = "Climate Town contributors" }
 ]
@@ -10,5 +12,15 @@ dependencies = [
   "discord.py",
   "python-dotenv",
   "pytest",
-  "pre-commit"
+  "pre-commit",
+  "mypy>=1.18.1",
+  "loguru>=0.7.3",
 ]
+
+
+[project.scripts]
+discord-bot = "discord_bot:main"
+
+[build-system]
+requires = ["uv_build>=0.8.16,<0.9.0"]
+build-backend = "uv_build"
