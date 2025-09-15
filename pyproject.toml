@@ -12,4 +12,5 @@ dependencies = [
   "pytest",
   "pre-commit",
   "mypy>=1.18.1",
+  "loguru>=0.7.3",
 ]
