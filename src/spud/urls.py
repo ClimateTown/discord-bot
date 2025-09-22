@@ -18,15 +18,13 @@ class UrlProcessor(abc.ABC):
 class YouTubeUrlProcessor(UrlProcessor):
     """Takes in a YouTube URL, and ..."""
 
-    def process(self, url: urllib.parse.ParseResult) -> urllib.parse.ParseResult:
-        ...
+    def process(self, url: urllib.parse.ParseResult) -> urllib.parse.ParseResult: ...
 
 
 class InstagramUrlProcessor(UrlProcessor):
     """Takes in an Instagram URL, and ..."""
 
-    def process(self, url: urllib.parse.ParseResult) -> urllib.parse.ParseResult:
-        ...
+    def process(self, url: urllib.parse.ParseResult) -> urllib.parse.ParseResult: ...
 
 
 URL_PROCESSORS: list[UrlProcessor] = [
